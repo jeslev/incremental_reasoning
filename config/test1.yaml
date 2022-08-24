@@ -1,0 +1,11 @@
+setting:
+  system:
+    inputfile: [/home/Datasets/shinra_h1_sinf.train.jsonl,/home/Datasets/shinra_h1_sinf.dev.jsonl]
+    model: roberta-base
+    sample: 100
+  winogrande:
+    n_classifiers: 5
+    training_set_size: 20
+    top-k: 10
+    threshold: 0.75
+

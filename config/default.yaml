@@ -1,0 +1,12 @@
+setting:
+  system:
+    inputfile: None
+    output_embeddings: output
+    model: roberta-base
+    sample: -1
+  winogrande:
+    n_classifiers: 64
+    training_set_size: 10000
+    top-k: 500
+    threshold: 0.75
+
