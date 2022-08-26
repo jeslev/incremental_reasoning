@@ -11,13 +11,26 @@ Download the data for the multi-hop reasoning experiments and downstream tasks i
 | [SHINET](https://drive.google.com/file/d/169CS6Q3-O1sL2oiEpL_moFjYBRMxcPuh/view?usp=sharing)     | 1           |                          |
 | [SHINET](https://drive.google.com/file/d/1fiNQqseC0_60ymObxm31IzlWOS_R10Tr/view?usp=sharing)     | 2           | Distractors included     |
 | [RuleTakers](https://drive.google.com/file/d/1dhROWEM1a1DRNhntw_huM7nJFIu3SJld/view?usp=sharing) | 0 - 5       | Filtered by single hops. innoculation files  |
-| [RACE]()                                                                                         | -           | Innoculation files       |
+| [RACE](https://drive.google.com/file/d/1SIWO9G0LmPz8mIbl-LJ35dUcPH2oFFFH/view?usp=sharing)                                                                                         | -           | Innoculation files       |
 
 ## External Resources
 | Dataset                                                                                                         | Source                                          | 
 |-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------|
 | [LeapOfThought](https://github.com/alontalmor/LeapOfThought/blob/master/README.md#artisets-artificial-datasets) | Leap-Of-Thought - Talmor et al.                 | 
 | [Semantic Fragments](https://github.com/allenai/semantic_fragments/tree/master/scripts_mcqa)                    | What does my QA model knows? - Richardson et al. |
+
+## Trained models (HuggingFace Transformers  version)
+| Model       | Description                     | Link     |
+|-------------|---------------------------------|----------|
+| RoBERTa     | Trained on SHINet 2-hop (g-inf) | [link](https://drive.google.com/file/d/1DcL5sbYg8P13pA4brY6TYiykCWvr5QpP/view?usp=sharing) |
+| XLNet       | Trained on SHINet 2-hop (g-inf) | [link](https://drive.google.com/file/d/1RQIQ0XiYNX0h60iHBwZJodGlqtZokf3B/view?usp=sharing) |
+| BERT | Trained on SHINet 2-hop (g-inf) | [link](https://drive.google.com/file/d/1DudzWUtl5D7C-oXl0-t9grPdX5B4O9Hb/view?usp=sharing) |
+
+To load the models:
+```python
+from transformers import AutoModel
+model = AutoModel.from_pretrained(path)
+```
 
 
 # Setup
@@ -36,8 +49,8 @@ conda activate inchop
 ```
 
 ## 3. Training and Evaluation
-With the ==config== and ==inc_reason== folders we obtain similar results to Table 2 and 3 from our paper. 
-
+With the **config** and **inc_reason** folders we obtain similar results to Table 2 and 3 from our paper. 
+ 
 ### For training the models:
 
 1. For BERT 
@@ -93,4 +106,6 @@ python main.py --config config/test1.yaml
 ```
 Input data, output directory and parameters for the algorithm can be modified in *config/test1.yaml* file or directly in the *config/default.yaml* file.
 
-# Reference
+# Citation
+
+To appear on COLING 2022
