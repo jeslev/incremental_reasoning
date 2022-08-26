@@ -107,10 +107,10 @@ python main.py --config config/test1.yaml
 Input data, output directory and parameters for the algorithm can be modified in *config/test1.yaml* file or directly in the *config/default.yaml* file.
 
 # Citation
-
+```
 @inproceedings{lovoncoling2022,
     title = "Can We Guide a Multi-Hop Reasoning Language Model to Incrementally Learn at each Single-Hop?",
-    author = {Lovon-Melgarejo, Jesus  and
+    author = { Lov{\'{o}}n{-}Melgarejo Jes{\'{u}}s ,  and
     Moreno, Jose G  and 
     Besan{\c{c}}on, Romaric  and
     Ferret, Olivier  and
@@ -118,3 +118,4 @@ Input data, output directory and parameters for the algorithm can be modified in
     booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
     year = "2022",
 }
+```
