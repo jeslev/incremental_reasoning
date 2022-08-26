@@ -108,4 +108,13 @@ Input data, output directory and parameters for the algorithm can be modified in
 
 # Citation
 
-To appear on COLING 2022
+@inproceedings{lovoncoling2022,
+    title = "Can We Guide a Multi-Hop Reasoning Language Model to Incrementally Learn at each Single-Hop?",
+    author = {Lovon-Melgarejo, Jesus  and
+    Moreno, Jose G  and 
+    Besan{\c{c}}on, Romaric  and
+    Ferret, Olivier  and
+    Tamine, Lynda},
+    booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
+    year = "2022",
+}
