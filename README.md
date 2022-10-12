@@ -1,6 +1,6 @@
 # Incremental Reasoning
 
-This repo contains tools to reproduce the work [ Can We Guide a Multi-Hop Reasoning Language Model to Incrementally Learn at each Hop?](localhost) (to be presented at COLING 2022).
+This repo contains tools to reproduce the work [ Can We Guide a Multi-Hop Reasoning Language Model to Incrementally Learn at each Hop?](https://aclanthology.org/2022.coling-1.125/).
 
 # Artificial Datasets
 Download the data for the multi-hop reasoning experiments and downstream tasks in the following tables
@@ -108,14 +108,18 @@ Input data, output directory and parameters for the algorithm can be modified in
 
 # Citation
 ```
-@inproceedings{lovoncoling2022,
-    title = "Can We Guide a Multi-Hop Reasoning Language Model to Incrementally Learn at each Single-Hop?",
-    author = { Lov{\'{o}}n{-}Melgarejo Jes{\'{u}}s ,  and
-    Moreno, Jose G  and 
-    Besan{\c{c}}on, Romaric  and
-    Ferret, Olivier  and
-    Tamine, Lynda},
+@inproceedings{lovon-2022-guide,
+    title = "Can We Guide a Multi-Hop Reasoning Language Model to Incrementally Learn at Each Single-Hop?",
+    author = "Lovon-Melgarejo, Jesus  and
+      Moreno, Jose G.  and
+      Besan{\c{c}}on, Romaric  and
+      Ferret, Olivier  and
+      Tamine, Lynda",
     booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
     year = "2022",
+    address = "Gyeongju, Republic of Korea",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2022.coling-1.125",
+    pages = "1455--1466",
 }
 ```
